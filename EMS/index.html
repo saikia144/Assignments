@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="styles.css"></script> -->
+    <script src="validation.js"></script>
+    <style>
+        .login-form {
+            padding-top: 7rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .login-form .row {
+            padding-top: 1rem;
+        }
+
+        .login-form .button {
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Employee Management System</a>
+        </div>
+    </nav>
+
+    <!-- login form -->
+    <main class="login-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header"><b> Admin Login</b></div>
+                        <div class="card-body">
+                            <p> Login with your username and password</p>
+                            <form name="myForm" action="./dashboard.html" method="post"
+                                onsubmit="return validateForm()">
+                                <div class="form-group row">
+                                    <label for="username" class="col-md-3 text-md-right">Username</label>
+                                    <div class="col-md-8">
+                                        <input type="text" name="uname" id="username" class="form-control" required
+                                            autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-3 text-md-right">Password</label>
+                                    <div class="col-md-8">
+                                        <input type="password" name="pwd" id="password" class="form-control" required
+                                            autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="button col-md-3 offset-md-5">
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

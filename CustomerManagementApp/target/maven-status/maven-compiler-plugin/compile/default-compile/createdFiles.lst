@@ -1,0 +1,4 @@
+com\customer\model\Customer.class
+com\customer\config\AppConfig.class
+com\customer\config\AppInitializer.class
+com\customer\controller\CustomerController.class
